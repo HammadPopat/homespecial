@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Murtuza’s Table • Fresh Homemade Meals & Artisan Bakes Delivered</title>
+  <meta name="description" content="Order comforting, authentic homemade meals and artisan treats made daily in small batches with love, pure ingredients, and zero preservatives. Delivered hot to your doorstep." />
+  
+  <!-- Google Fonts for Editorial Artisan & Minimalist Luxury Look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Marquee Bar -->
+  <div class="top-announcement">
+    <div class="announcement-content">
+      <span><i class="fa-solid fa-fire-burner"></i> Fresh Dinner Batch Cooking Now • Order Before 6:00 PM</span>
+      <span class="dot">•</span>
+      <span><i class="fa-solid fa-leaf"></i> 100% Desi Ghee & Handpicked Spices</span>
+      <span class="dot">•</span>
+      <span><i class="fa-solid fa-heart"></i> Made Just Like Ammi’s Hand</span>
+      <span class="dot">•</span>
+      <span><i class="fa-solid fa-truck-fast"></i> Use code <strong>HOMELOVE</strong> for 15% Off Your First Tiffin</span>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="brand-sub">Artisan Kitchen</span>
+        <span class="brand-title">Murtuza’s Table<span class="brand-accent">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu" class="nav-link active">Menu & Specials</a>
+        <a href="#story" class="nav-link">Our Kitchen Story</a>
+        <a href="#how-it-works" class="nav-link">How We Cook</a>
+        <a href="#tiffin-plans" class="nav-link">Weekly Tiffin</a>
+        <a href="#reviews" class="nav-link">Love & Reviews</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Search Trigger -->
+        <div class="header-search">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="quickSearchInput" placeholder="Search biryani, korma, dessert..." />
+        </div>
+
+        <!-- WhatsApp Quick Link -->
+        <a href="https://wa.me/?text=Hi%20Murtuza's%20Table,%20I%20would%20like%20to%20inquire%20about%20today's%20fresh%20menu!" target="_blank" class="btn-icon-link" title="Chat on WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <!-- Cart Trigger Button -->
+        <button class="cart-btn" id="openCartBtn" aria-label="View Cart">
+          <span class="cart-icon-wrapper">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span class="cart-badge" id="cartCountBadge">0</span>
+          </span>
+          <span class="cart-btn-label">Tiffin Basket</span>
+          <span class="cart-btn-total" id="cartHeaderTotal">Rs 0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (Boutique Artisan Food Aesthetics) -->
+  <section class="hero-section">
+    <div class="hero-pattern-bg"></div>
+    <div class="container hero-container">
+      <div class="hero-text-col">
+        <div class="badge-pill">
+          <span class="badge-pulsing-dot"></span>
+          <span>Small Batch • Freshly Cooked On Order</span>
+        </div>
+        
+        <h1 class="hero-heading">
+          Slow-cooked warmth, <br>
+          <em>delivered right from</em> <br>
+          <span class="highlight-handwritten">our home to yours.</span>
+        </h1>
+        
+        <p class="hero-description">
+          Forget heavy commercial restaurant oils and mass-produced food. Murtuza’s Table brings you pure, unadulterated home cooking crafted in small pots with real pantry spices, love, and slow simmering.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary">
+            <span>Explore Today’s Menu</span>
+            <i class="fa-solid fa-arrow-down-long"></i>
+          </a>
+          <a href="#tiffin-plans" class="btn btn-secondary">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Weekly Meal Box</span>
+          </a>
+        </div>
+
+        <div class="hero-trust-bar">
+          <div class="trust-avatars">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Customer avatar" />
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Customer avatar" />
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&auto=format&fit=crop&q=80" alt="Customer avatar" />
+            <span class="trust-badge-plus">+480</span>
+          </div>
+          <div class="trust-text">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>4.9 / 5.0</span>
+            </div>
+            <p>Loved by 450+ families for clean, daily meals</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual-col">
+        <div class="hero-card-main">
+          <div class="floating-badge badge-top-left">
+            <i class="fa-solid fa-seedling"></i>
+            <div>
+              <strong>Pure Ghee</strong>
+              <small>No palm oil or MSG</small>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=900&auto=format&fit=crop&q=80" alt="Authentic Dum Biryani with rustic garnishes" class="hero-img-main" />
+          </div>
+
+          <div class="floating-badge badge-bottom-right">
+            <div class="steam-icon"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+            <div>
+              <strong>Cooked Fresh at 11am & 6pm</strong>
+              <small>Packed in thermal eco-boxes</small>
+            </div>
+          </div>
+
+          <div class="hero-sticky-note">
+            <span class="note-quote">“Taste like Sunday afternoon at dadi’s house.”</span>
+            <span class="note-author">— Mahnoor K., Karachi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Highlights Bar -->
+  <section class="features-bar">
+    <div class="container features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
+        <div>
+          <h3>Zero Commercial Pastes</h3>
+          <p>Hand-pounded ginger, garlic & stone-ground whole garam masala.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-mortar-pestle"></i></div>
+        <div>
+          <h3>Cooked in Small Batches</h3>
+          <p>Never cooked in bulk 50L cauldrons. Only 10-12 servings per deghi.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-box-tissue"></i></div>
+        <div>
+          <h3>Eco-Friendly Packaging</h3>
+          <p>Food-grade, unbleached kraft paper containers and hot-seal foil.</p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-bell-concierge"></i></div>
+        <div>
+          <h3>Doorstep Delivery</h3>
+          <p>Hot lunch delivered by 1:30 PM, dinner delivered by 8:00 PM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Menu Section -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Today's Fresh Pots & Bakes</span>
+        <h2 class="section-title">Handcrafted Daily Dastarkhwan</h2>
+        <p class="section-desc">
+          Everything you see is prepared on order or in limited daily batches. When a pot finishes, it's done for the day!
+        </p>
+      </div>
+
+      <!-- Filter Controls & Diet Toggles -->
+      <div class="menu-controls-wrapper">
+        <div class="category-tabs" id="categoryTabs">
+          <button class="category-btn active" data-category="all">
+            <i class="fa-solid fa-bowl-food"></i> All Dishes (<span id="count-all">0</span>)
+          </button>
+          <button class="category-btn" data-category="signature">
+            <i class="fa-solid fa-crown"></i> Ammi's Curries & Biryani (<span id="count-signature">0</span>)
+          </button>
+          <button class="category-btn" data-category="comfort">
+            <i class="fa-solid fa-mug-hot"></i> Comfort Daal & Sabzi (<span id="count-comfort">0</span>)
+          </button>
+          <button class="category-btn" data-category="tiffin">
+            <i class="fa-solid fa-box-archive"></i> Daily Thali / Tiffin (<span id="count-tiffin">0</span>)
+          </button>
+          <button class="category-btn" data-category="breads">
+            <i class="fa-solid fa-bread-slice"></i> Parathas & Roti (<span id="count-breads">0</span>)
+          </button>
+          <button class="category-btn" data-category="desserts">
+            <i class="fa-solid fa-cookie-bite"></i> Artisan Bakes & Mithai (<span id="count-desserts">0</span>)
+          </button>
+          <button class="category-btn" data-category="chai">
+            <i class="fa-solid fa-cloud-sun"></i> Shaam Ki Chai Snacks (<span id="count-chai">0</span>)
+          </button>
+        </div>
+
+        <div class="menu-filter-row">
+          <div class="diet-toggles">
+            <button class="diet-pill active" data-diet="all">All</button>
+            <button class="diet-pill" data-diet="veg"><i class="fa-solid fa-circle-dot veg-dot"></i> Pure Veg</button>
+            <button class="diet-pill" data-diet="nonveg"><i class="fa-solid fa-circle-dot nonveg-dot"></i> Non-Veg</button>
+            <button class="diet-pill" data-diet="sweet"><i class="fa-solid fa-ice-cream"></i> Sweet Tooth</button>
+          </div>
+
+          <div class="sort-select-wrapper">
+            <label for="sortBySelect"><i class="fa-solid fa-arrow-down-short-wide"></i> Sort:</label>
+            <select id="sortBySelect">
+              <option value="popular">Most Loved</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="prep-time">Fastest Delivery</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dishes Grid Container -->
+      <div class="dishes-grid" id="dishesGrid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+
+      <!-- Empty State if search/filter matches 0 -->
+      <div class="empty-state" id="emptyState" style="display: none;">
+        <div class="empty-icon"><i class="fa-solid fa-utensils"></i></div>
+        <h3>No dishes found matching your cravings</h3>
+        <p>Try clearing your search query or selecting a different category.</p>
+        <button class="btn btn-secondary" id="resetFiltersBtn">Reset All Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chef & Kitchen Philosophy Story -->
+  <section class="story-section" id="story">
+    <div class="container story-grid">
+      <div class="story-image-group">
+        <div class="story-img-card card-one">
+          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=700&auto=format&fit=crop&q=80" alt="Making fresh dough with flour and warm love" />
+        </div>
+        <div class="story-img-card card-two">
+          <img src="https://images.unsplash.com/photo-1509358271058-acd22cc93898?w=500&auto=format&fit=crop&q=80" alt="Pounding natural spices in mortar" />
+        </div>
+        <div class="handwritten-sticker">
+          “Slow fire, honest ghee, happy bellies.”
+        </div>
+      </div>
+
+      <div class="story-content">
+        <span class="section-subtitle">Our Heart & Philosophy</span>
+        <h2 class="section-title">Why Murtuza Started Cooking For The City</h2>
+        <p class="story-lead">
+          We got tired of ordering from restaurants that dumped liters of processed red chili oil and MSG into dishes just to mask stale meat and instant gravy bases.
+        </p>
+        <p class="story-text">
+          In our kitchen, every morning starts at 6:30 AM with fresh produce from the local mandi. Onions are patiently caramelized till golden honey, tomatoes are stewed without artificial purée, and garlic is crushed right as the pot warms up.
+        </p>
+
+        <div class="story-commitments">
+          <div class="commitment-item">
+            <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+            <div>
+              <h4>Never Frozen, Never Reheated</h4>
+              <p>Curries are made fresh in the morning for lunch, and separate batches at 5 PM for dinner.</p>
+            </div>
+          </div>
+
+          <div class="commitment-item">
+            <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+            <div>
+              <h4>Real Himalayan Pink Salt & Desi Ghee</h4>
+              <p>Light on the stomach, no bloating or heartburn after eating.</p>
+            </div>
+          </div>
+
+          <div class="commitment-item">
+            <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+            <div>
+              <h4>Custom Spice Adjustment</h4>
+              <p>Eating with kids or prefer gentle spices? Just leave a note at checkout.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chef-signature-row">
+          <div class="signature-text">
+            <strong>Murtuza & Family</strong>
+            <small>Home Chef & Founder</small>
+          </div>
+          <div class="signature-hand">Murtuza</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work / Order Process -->
+  <section class="how-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Simple, Clean & Reliable</span>
+        <h2 class="section-title">From Our Deghi To Your Table</h2>
+        <p class="section-desc">Experience the nostalgia of pure ghar ka khana without lifting a pan.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Pick Your Dishes</h3>
+          <p>Browse today's cooked dishes, choose portion sizes (Single, Duo, or Family Handi), and customize spice level.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-icon"><i class="fa-solid fa-fire-burner"></i></div>
+          <h3>Simmered In Small Pots</h3>
+          <p>We cook your order with hand-ground spices and seal it in insulated, leak-proof food trays immediately.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-icon"><i class="fa-solid fa-box-open"></i></div>
+          <h3>Delivered Hot & Punctual</h3>
+          <p>Our dedicated riders ensure your tiffin arrives piping hot right when your hunger strikes.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <div class="step-icon"><i class="fa-solid fa-heart-circle-check"></i></div>
+          <h3>Clean, Happy Eating</h3>
+          <p>Savor authentic home flavors that leave you energetic and comforted, exactly like mom's cooking.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Weekly Tiffin / Subscription Plans -->
+  <section class="tiffin-section" id="tiffin-plans">
+    <div class="container">
+      <div class="tiffin-banner">
+        <div class="tiffin-text">
+          <span class="badge-pill light">Office & Home Subscription</span>
+          <h2>Ditch Fast Food. Subscribe To Our Daily Lunch Tiffin.</h2>
+          <p>
+            Busy corporate schedule or living away from home? Get a rotating variety of daily dal, chicken, seasonal sabzi, 2 hot rotis, fresh salad, and raita delivered every afternoon at 1:15 PM sharp.
+          </p>
+
+          <div class="tiffin-features-list">
+            <span><i class="fa-solid fa-circle-check"></i> New daily menu so you never get bored</span>
+            <span><i class="fa-solid fa-circle-check"></i> Pause or skip days easily via WhatsApp</span>
+            <span><i class="fa-solid fa-circle-check"></i> Free doorstep delivery included</span>
+          </div>
+
+          <div class="tiffin-btn-row">
+            <button class="btn btn-primary" onclick="openTiffinModal('Weekly Comfort Plan')">
+              <span>Book 5-Day Trial (Rs 2,850)</span>
+            </button>
+            <button class="btn btn-outline" onclick="openTiffinModal('Monthly Office Executive Plan')">
+              <span>View Monthly Menu Calendar</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="tiffin-card-preview">
+          <div class="preview-header">
+            <strong>This Week's Daily Dabba Menu</strong>
+            <span class="tag-live">Active Week</span>
+          </div>
+          <ul class="preview-days-list">
+            <li>
+              <span class="day-label">Mon</span>
+              <span class="dish-name">Kadhi Pakora + Steamed Zeera Rice + Kachumber</span>
+            </li>
+            <li>
+              <span class="day-label">Tue</span>
+              <span class="dish-name">Ammi's Chicken Korma + 2 Phulkas + Fresh Mint Raita</span>
+            </li>
+            <li>
+              <span class="day-label">Wed</span>
+              <span class="dish-name">Daal Makhani (Slow 12-hr simmer) + Jeera Rice + Achar</span>
+            </li>
+            <li>
+              <span class="day-label">Thu</span>
+              <span class="dish-name">Aloo Palak Desi Style + 2 Butter Rotis + Kheer cup</span>
+            </li>
+            <li>
+              <span class="day-label">Fri</span>
+              <span class="dish-name">Special Dum Chicken Biryani + Plum Chutney + Salad</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Customer Reviews Section -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Real Words From Real Homes</span>
+        <h2 class="section-title">Words Straight From The Heart</h2>
+        <p class="section-desc">Join over 450+ families, doctors, students, and busy professionals who trust us with their meals.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-comment">
+            “Being a software engineer working from home, I was sick of oily hotel food giving me acidity. Murtuza’s lunch tiffin has literally rescued my stomach. It feels so clean, light, and full of authentic spice aroma!”
+          </p>
+          <div class="reviewer-meta">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&auto=format&fit=crop&q=80" alt="Hamza Tariq" class="reviewer-img" />
+            <div>
+              <h4>Hamza Tariq</h4>
+              <span>Senior Dev • DHA Phase 6</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card highlighted-review">
+          <div class="review-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-comment">
+            “The Mutton Shami Kebabs and slow-simmered Nihari on Sunday morning reminded me of my late grandmother’s house. The packing was spotless, hot, and you can smell pure saffron and cardamom the moment you open it.”
+          </p>
+          <div class="reviewer-meta">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&auto=format&fit=crop&q=80" alt="Dr. Sarah Alvi" class="reviewer-img" />
+            <div>
+              <h4>Dr. Sarah Alvi</h4>
+              <span>Physician • Clifton</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-comment">
+            “Their artisan fudgy brownies and Zafrani Shahi Kheer are to die for! We ordered the Family Dastarkhwan Box for a small daawat at home, and all our guests thought we had a private chef in our kitchen.”
+          </p>
+          <div class="reviewer-meta">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=120&auto=format&fit=crop&q=80" alt="Ayesha Farooq" class="reviewer-img" />
+            <div>
+              <h4>Ayesha Farooq</h4>
+              <span>Architect • Gulberg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container faq-container">
+      <div class="faq-intro">
+        <span class="section-subtitle">Clear Answers</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p>Everything you need to know about our daily home kitchen cooking, deliveries, and packaging.</p>
+        <div class="faq-support-box">
+          <i class="fa-brands fa-whatsapp support-whatsapp-icon"></i>
+          <div>
+            <strong>Have custom dietary requests?</strong>
+            <p>Chat directly with Murtuza for diabetic-friendly, low-oil, or gluten-free requests.</p>
+            <a href="https://wa.me/?text=Hello%20Murtuza,%20I%20have%20a%20special%20dietary%20request." target="_blank" class="text-link">WhatsApp Us Directly &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-accordion" id="faqAccordion">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What are your daily delivery timings?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We operate two dedicated delivery slots daily: Lunch slot arrives between 12:45 PM – 2:00 PM, and Dinner slot arrives between 7:15 PM – 8:45 PM. You can choose your preferred slot at checkout.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How fresh is the food? Do you keep leftovers?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Strictly zero leftovers! We only cook pre-determined small pot quantities each morning and afternoon. Once an item runs out, it shows sold out. Any unsold food is shared with our building caretaking staff the same evening.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What payment methods do you accept?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We accept Cash on Delivery (COD), JazzCash, EasyPaisa, Direct Bank Transfer (Raast), and Credit/Debit Cards upon order verification.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I customize the spice or oil level?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! During checkout or in the Dish Quick View, you can select Mild (Kids Friendly), Medium (Authentic Ghar Ka), or Spicy (Deghi Teekha), and write special instructions in the chef notes box.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <span class="brand-title">Murtuza’s Table<span class="brand-accent">.</span></span>
+        <p class="footer-bio">
+          Artisanal home kitchen cooking slow-simmered meals, fragrant biryanis, and comforting desserts in hygienic, small domestic pots. Made with pure ingredients and Ammi's timeless recipes.
+        </p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Today's Kitchen</h4>
+        <ul>
+          <li><a href="#menu" onclick="filterCategoryFromFooter('signature')">Ammi's Special Dum Biryani</a></li>
+          <li><a href="#menu" onclick="filterCategoryFromFooter('signature')">Slow Handi Chicken Korma</a></li>
+          <li><a href="#menu" onclick="filterCategoryFromFooter('comfort')">Comfort Yellow Daal Tadka</a></li>
+          <li><a href="#menu" onclick="filterCategoryFromFooter('tiffin')">Office Lunch Thali</a></li>
+          <li><a href="#menu" onclick="filterCategoryFromFooter('desserts')">Fudgy Artisan Brownies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Neighborhood Delivery</h4>
+        <ul class="footer-info-list">
+          <li><i class="fa-solid fa-location-dot"></i> Delivering Across All Main Sectors & Townships</li>
+          <li><i class="fa-solid fa-clock"></i> Lunch Batch: 11:30 AM – 2:30 PM</li>
+          <li><i class="fa-solid fa-clock"></i> Dinner Batch: 6:00 PM – 9:30 PM</li>
+          <li><i class="fa-solid fa-phone"></i> Direct Kitchen Line: +92 300 1234567</li>
+        </ul>
+      </div>
+
+      <div class="footer-col newsletter-col">
+        <h4>Secret Sunday Specials</h4>
+        <p>Subscribe to receive WhatsApp alert for Sunday Special Haleem, Nihari, or Paya batches before they sell out.</p>
+        <form class="footer-newsletter" id="newsletterForm">
+          <input type="tel" placeholder="Your WhatsApp number" required />
+          <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+        </form>
+        <small class="text-muted">No spam, just weekend food notifications.</small>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 Murtuza’s Table • Fresh Homemade Food Delivery. Handcrafted with love.</p>
+        <div class="footer-legal-links">
+          <span>100% Halal Certified Ingredients</span>
+          <span class="dot">•</span>
+          <span>Hygienic Home Kitchen Inspection Cleared</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Cart Bar (Sticky Bottom on Phone) -->
+  <div class="mobile-cart-float" id="mobileCartFloat">
+    <div class="mobile-cart-details">
+      <span class="mobile-cart-count" id="mobileCartCount">0 items</span>
+      <span class="mobile-cart-total" id="mobileCartTotal">Rs 0</span>
+    </div>
+    <button class="mobile-checkout-btn" id="mobileCartTrigger">
+      <span>View Basket</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </button>
+  </div>
+
+  <!-- Cart Drawer Overlay & Sidebar -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <div class="cart-header-title">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <h3>Your Fresh Tiffin</h3>
+        <span class="cart-items-pill" id="cartTotalItemsCount">0</span>
+      </div>
+      <button class="close-drawer-btn" id="closeCartBtn" aria-label="Close cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Free Delivery Progress Bar -->
+    <div class="delivery-progress-box">
+      <div class="progress-labels">
+        <span id="progressMessage"><i class="fa-solid fa-truck"></i> Add Rs 450 more for <strong>Free Delivery!</strong></span>
+        <span id="progressPercent">0%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-bar-fill" id="deliveryProgressBar" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scrollable List -->
+    <div class="cart-items-list" id="cartItemsList">
+      <!-- Populated dynamically -->
+    </div>
+
+    <!-- Empty Cart State -->
+    <div class="empty-cart-view" id="emptyCartView">
+      <div class="empty-cart-art">🍲</div>
+      <h4>Your tiffin basket is feeling empty</h4>
+      <p>Browse today's homemade curries, warm rotis, and treats to fill your heart and belly.</p>
+      <button class="btn btn-secondary btn-sm" onclick="closeCartAndScrollMenu()">Explore Menu</button>
+    </div>
+
+    <!-- Cart Footer with Pricing & Checkout -->
+    <div class="cart-footer" id="cartFooter">
+      <!-- Coupon Box -->
+      <div class="promo-box">
+        <div class="promo-input-group">
+          <input type="text" id="couponInput" placeholder="Try 'HOMELOVE' or 'FIRSTBITE'" />
+          <button type="button" id="applyCouponBtn">Apply</button>
+        </div>
+        <div class="promo-message" id="promoMessage"></div>
+      </div>
+
+      <div class="cart-summary-breakdown">
+        <div class="summary-line">
+          <span>Subtotal</span>
+          <span id="summarySubtotal">Rs 0</span>
+        </div>
+        <div class="summary-line discount-line" id="summaryDiscountRow" style="display: none;">
+          <span>Promo Discount (<span id="discountName"></span>)</span>
+          <span id="summaryDiscount">-Rs 0</span>
+        </div>
+        <div class="summary-line">
+          <span>Delivery Fee (Insulated Box)</span>
+          <span id="summaryDelivery">Rs 150</span>
+        </div>
+        <div class="summary-line total-line">
+          <span>Grand Total</span>
+          <span id="summaryGrandTotal">Rs 0</span>
+        </div>
+      </div>
+
+      <div class="cart-actions-row">
+        <button class="btn btn-primary btn-block checkout-action-btn" id="openCheckoutModalBtn">
+          <span>Proceed To Checkout</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="cart-guarantee-note">
+        <i class="fa-solid fa-shield-heart"></i>
+        <span>Freshly prepared on order. If you aren't delighted, we'll replace your meal.</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Quick View / Customization Modal -->
+  <div class="modal-overlay" id="quickViewOverlay">
+    <div class="modal-card quick-view-card">
+      <button class="modal-close-btn" id="closeQuickViewBtn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="quick-view-grid">
+        <div class="qv-image-container">
+          <img src="" alt="" id="qvImage" />
+          <div class="qv-diet-badge" id="qvDietBadge"></div>
+        </div>
+        <div class="qv-details">
+          <span class="qv-category" id="qvCategory">Category</span>
+          <h2 class="qv-title" id="qvTitle">Dish Title</h2>
+          <div class="qv-rating-row">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <span id="qvRating">4.9</span>
+            </div>
+            <span class="dot">•</span>
+            <span class="qv-servings" id="qvServings">Serves 1-2</span>
+            <span class="dot">•</span>
+            <span class="qv-prep" id="qvPrep">35 mins</span>
+          </div>
+
+          <p class="qv-description" id="qvDescription">Dish description here...</p>
+
+          <div class="qv-ingredients-box">
+            <strong><i class="fa-solid fa-seedling"></i> Key Ingredients:</strong>
+            <p id="qvIngredients">Ingredient list...</p>
+          </div>
+
+          <!-- Portion / Size Selector -->
+          <div class="qv-option-group">
+            <label class="option-label">Choose Portion Size:</label>
+            <div class="portion-options" id="qvPortionOptions">
+              <!-- Dynamically added -->
+            </div>
+          </div>
+
+          <!-- Spice Level Selector -->
+          <div class="qv-option-group">
+            <label class="option-label">Select Spice Level:</label>
+            <div class="spice-selector">
+              <label class="spice-radio">
+                <input type="radio" name="qvSpice" value="Mild" checked />
+                <span class="spice-btn">🌱 Mild (Kids)</span>
+              </label>
+              <label class="spice-radio">
+                <input type="radio" name="qvSpice" value="Medium" />
+                <span class="spice-btn">🌶️ Medium (Ghar Ka)</span>
+              </label>
+              <label class="spice-radio">
+                <input type="radio" name="qvSpice" value="Spicy" />
+                <span class="spice-btn">🔥 Spicy (Deghi)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Special Chef Note -->
+          <div class="qv-option-group">
+            <label class="option-label" for="qvSpecialNotes">Kitchen Note / Preferences:</label>
+            <input type="text" id="qvSpecialNotes" placeholder="e.g. less salt, extra gravy, crisp roti..." />
+          </div>
+
+          <div class="qv-footer-row">
+            <div class="qv-price-display">
+              <span class="qv-price-label">Price</span>
+              <h3 id="qvPriceDisplay">Rs 0</h3>
+            </div>
+            <div class="qv-qty-controls">
+              <button class="qty-btn" id="qvQtyMinus"><i class="fa-solid fa-minus"></i></button>
+              <span class="qty-number" id="qvQtyVal">1</span>
+              <button class="qty-btn" id="qvQtyPlus"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <button class="btn btn-primary" id="qvAddToCartBtn">
+              <i class="fa-solid fa-basket-shopping"></i>
+              <span>Add To Tiffin</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout & Delivery Modal -->
+  <div class="modal-overlay" id="checkoutOverlay">
+    <div class="modal-card checkout-card">
+      <button class="modal-close-btn" id="closeCheckoutBtn"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div class="checkout-header">
+        <span class="checkout-step-pill">Final Step</span>
+        <h2>Confirm Your Delivery Details</h2>
+        <p>Please enter your exact drop-off spot so our rider can deliver your meal piping hot.</p>
+      </div>
+
+      <form id="checkoutForm" class="checkout-form">
+        <div class="form-row two-cols">
+          <div class="form-group">
+            <label for="customerName"><i class="fa-solid fa-user"></i> Full Name *</label>
+            <input type="text" id="customerName" placeholder="e.g. Murtuza Ali" required />
+          </div>
+          <div class="form-group">
+            <label for="customerPhone"><i class="fa-solid fa-phone"></i> Phone / WhatsApp *</label>
+            <input type="tel" id="customerPhone" placeholder="03XX-XXXXXXX" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="customerAddress"><i class="fa-solid fa-location-dot"></i> Complete Home / Office Address *</label>
+          <textarea id="customerAddress" rows="2" placeholder="House/Flat #, Floor, Building Name, Street & Sector/Area" required></textarea>
+        </div>
+
+        <div class="form-row two-cols">
+          <div class="form-group">
+            <label for="deliverySlot"><i class="fa-solid fa-clock"></i> Delivery Time Slot *</label>
+            <select id="deliverySlot" required>
+              <option value="Today Lunch (12:45 PM - 1:45 PM)">Today Lunch (12:45 PM - 1:45 PM)</option>
+              <option value="Today Dinner (7:15 PM - 8:30 PM)">Today Dinner (7:15 PM - 8:30 PM)</option>
+              <option value="Tomorrow Fresh Morning Batch">Tomorrow Fresh Morning Batch</option>
+              <option value="ASAP Fresh Cooking (Approx 45 mins)">ASAP Fresh Cooking (Approx 45 mins)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="paymentMethod"><i class="fa-solid fa-wallet"></i> Payment Method *</label>
+            <select id="paymentMethod" required>
+              <option value="Cash on Delivery (COD)">Cash on Delivery (COD)</option>
+              <option value="JazzCash / EasyPaisa Transfer">JazzCash / EasyPaisa Transfer</option>
+              <option value="Direct Raast / Online Bank Transfer">Direct Raast / Online Bank Transfer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="deliveryNotes"><i class="fa-solid fa-pen-fancy"></i> Rider Directions / House Landmark (Optional)</label>
+          <input type="text" id="deliveryNotes" placeholder="e.g. near Green Mosque, call before ringing doorbell..." />
+        </div>
+
+        <!-- Checkout Mini Summary -->
+        <div class="checkout-review-box">
+          <div class="checkout-review-row">
+            <span>Items Ordered:</span>
+            <strong id="coItemsSummary">0 items</strong>
+          </div>
+          <div class="checkout-review-row total-highlight">
+            <span>Amount Payable:</span>
+            <strong id="coGrandTotal">Rs 0</strong>
+          </div>
+        </div>
+
+        <!-- Options for Order Confirmation -->
+        <div class="checkout-buttons-group">
+          <button type="submit" class="btn btn-primary btn-block checkout-submit-btn">
+            <i class="fa-solid fa-check-circle"></i>
+            <span>Confirm Order On Website</span>
+          </button>
+          
+          <button type="button" class="btn btn-whatsapp btn-block" id="whatsappOrderBtn">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Order & Send Summary on WhatsApp</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order Success Receipt Modal -->
+  <div class="modal-overlay" id="successOverlay">
+    <div class="modal-card success-card">
+      <div class="success-icon-animation">
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      <h2>Order Placed In Our Kitchen!</h2>
+      <p class="success-subtitle">Ammi and Murtuza have received your order ticket and the stove is lit!</p>
+
+      <div class="receipt-box" id="receiptContent">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="success-actions">
+        <a id="whatsappReceiptLink" href="#" target="_blank" class="btn btn-whatsapp btn-block">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Track Status On WhatsApp</span>
+        </a>
+        <button class="btn btn-secondary btn-block" id="closeSuccessBtn">
+          <span>Back To Kitchen Menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Weekly Tiffin Inquiry Modal -->
+  <div class="modal-overlay" id="tiffinModalOverlay">
+    <div class="modal-card tiffin-modal-card">
+      <button class="modal-close-btn" id="closeTiffinModalBtn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="tiffin-modal-header">
+        <span class="badge-pill">Daily Meal Plan</span>
+        <h2 id="tiffinModalTitle">Weekly Tiffin Inquiry</h2>
+        <p>Get authentic homemade lunch delivered to your desk or home every day from Monday to Friday.</p>
+      </div>
+      <form id="tiffinInquiryForm" class="checkout-form">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" id="tiffinName" placeholder="Full name" required />
+        </div>
+        <div class="form-group">
+          <label>WhatsApp Number *</label>
+          <input type="tel" id="tiffinPhone" placeholder="03XX-XXXXXXX" required />
+        </div>
+        <div class="form-group">
+          <label>Delivery Area / Office Landmark *</label>
+          <input type="text" id="tiffinArea" placeholder="e.g. Blue Area, I.I Chundrigar Road, Gulberg III" required />
+        </div>
+        <div class="form-group">
+          <label>Meal Preferences / Number of Persons</label>
+          <input type="text" id="tiffinDiet" placeholder="e.g. 1 person lunch, prefer less oil, 1 person diabetic" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Send Tiffin Inquiry On WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Toast Notification System -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
